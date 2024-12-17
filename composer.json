@@ -1,0 +1,43 @@
+{
+    "name": "sypets/fields-with-allowlangsync",
+    "description": "Test helper to set allowLanguageSynchronization for some fields",
+    "license": "GPL-3.0",
+    "type": "typo3-cms-extension",
+    "authors": [
+        {
+            "name": "Sybille Peters",
+            "email": "sypets@gmx.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "typo3/cms-backend": "^13 | ^14",
+        "typo3/cms-core": "^13 | ^14"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+
+        },
+        "bin-dir": ".Build/bin",
+        "preferred-install": {
+            "*": "dist",
+            "typo3/cms-core": "source"
+        },
+        "process-timeout": 0,
+        "sort-packages": true,
+        "vendor-dir": ".Build/vendor"
+    },
+    "extra": {
+        "typo3/cms": {
+            "cms-package-dir": "{$vendor-dir}/typo3/cms",
+            "extension-key": "fields_with_allowlangsync",
+            "web-dir": ".Build/Web"
+        }
+    },
+    "scripts": {
+
+    }
+}
